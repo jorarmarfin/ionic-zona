@@ -24,3 +24,23 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body{
+    font-family: 'Acme', sans-serif;
+    ;
+}
+h1{
+    font-family: 'Acme', sans-serif;
+}
+.jamc-font-famuly{
+    font-size: 40px;
+}
+
+$sizes: "10", "20", "30", "40";
+@each $size in $sizes {
+    .jamc-font-size-#{$size} {
+        font-size: #{$size}px;
+    }
+}
