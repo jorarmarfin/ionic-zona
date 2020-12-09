@@ -25,22 +25,59 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&Poppins:ital,wght@1,900&display=swap');
 
 body{
     font-family: 'Acme', sans-serif;
     ;
 }
-h1{
-    font-family: 'Acme', sans-serif;
-}
-.jamc-font-famuly{
-    font-size: 40px;
-}
 
-$sizes: "10", "20", "30", "40";
+$sizes: "10","15", "20", "30", "40", "80";
 @each $size in $sizes {
-    .jamc-font-size-#{$size} {
+    .my-font-#{$size} {
         font-size: #{$size}px;
     }
+}
+
+.bg-red2-dark {
+    background-color: #DA4453;
+    color: #FFFFFF;
+}
+.rounded-s {
+    border-radius: 8px ;
+}
+.alert{
+    margin-top: 6px;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    span{
+        background-color: rgba(255,255,255,0.2);
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        bottom: -1px;
+        width: 47px;
+        i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+    h4{
+        padding-left: 47px;
+
+    }
+    strong{
+        display: block;
+        padding-left: 47px;
+        font-weight: 400;
+    }
+    
+}
+.color-white {
+    color: #fff !important;
 }

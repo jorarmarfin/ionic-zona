@@ -1,57 +1,85 @@
-<ion-header>
-  <ion-toolbar color="primary">
-      <ion-buttons slot="start">
-        <ion-thumbnail>
-          <img src="../assets/icon/logo-rcc.png" width="100px" />
-        </ion-thumbnail>
-      </ion-buttons>
-    <ion-title><h1>RCC - Zona 9</h1></ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content >
+<div class="my-front-header">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="3">
+        <img src="../assets/icon/logo-rcc.png" width="100px" />
 
-<ion-content>
+      </ion-col>
+      <ion-col size="9">
+        <div class="my-card-header">
+          <h4 class="my-subtitle-header">RCC Chosica Zona 9</h4>
+          <h1 class="my-title-header my-font-40">Hola Luis </h1>
+        </div>
+      
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
 <ion-grid fixed>
   <ion-row>
-    <ion-col size="6" size-sm="2">
-      <ion-card>
+    <ion-col size="6" size-sm="4" size-lg="2">
+      <ion-card routerLink="/calendario" color="primary">
         <ion-card-content class="ion-text-center">
-          <ion-icon slot="start" name="calendar" class="jamc-font-size-40" color="primary"></ion-icon>
+          <ion-icon slot="start" name="calendar" class="my-font-80"></ion-icon>
           <br>
-          <ion-text color="dark">
+          <ion-text color="light" class="my-font-20">
             Calendario
           </ion-text>
         </ion-card-content>
       </ion-card>
     </ion-col>
-    <ion-col size="6" size-sm="2">
-      <ion-card>
+    <ion-col size="6" size-sm="4" size-lg="2">
+      <ion-card routerLink="/pagos" color="primary">
         <ion-card-content class="ion-text-center">
-          <ion-icon slot="start" name="cash" class="jamc-font-size-40" color="primary"></ion-icon>
+          <ion-icon slot="start" name="cart" class="my-font-80"></ion-icon>
           <br>
-          <ion-text color="dark">
-            Caja
+          <ion-text color="light" class="my-font-20">
+            Pagos
           </ion-text>
         </ion-card-content>
       </ion-card>
     </ion-col>
-    <ion-col size="6" size-sm="2">
-      <ion-card>
+    <ion-col size="6" size-sm="4" size-lg="2">
+      <ion-card routerLink="/hermanos" color="primary">
         <ion-card-content class="ion-text-center">
-          <ion-icon slot="start" name="people" class="jamc-font-size-40" color="primary"></ion-icon>
+          <ion-icon slot="start" name="people" class="my-font-80"></ion-icon>
           <br>
-          <ion-text color="dark">
+          <ion-text color="light" class="my-font-20">
             Hermanos
           </ion-text>
         </ion-card-content>
       </ion-card>
     </ion-col>
-    <ion-col size="6" size-sm="2">
-      <ion-card>
+    <ion-col size="6" size-sm="4" size-lg="2">
+      <ion-card routerLink="/grupos" color="primary">
         <ion-card-content class="ion-text-center">
-          <ion-icon slot="start" name="calendar" class="jamc-font-size-40" color="primary"></ion-icon>
+          <ion-icon slot="start" name="layers" class="my-font-80"></ion-icon>
           <br>
-          <ion-text color="dark">
-            Grupo de oracion
+          <ion-text color="light" class="my-font-20">
+            Grupos
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" size-sm="4" size-lg="2">
+      <ion-card routerLink="/acuerdos" color="primary">
+        <ion-card-content class="ion-text-center">
+          <ion-icon slot="start" name="newspaper" class="my-font-80"></ion-icon>
+          <br>
+          <ion-text color="light" class="my-font-20">
+            Acuerdos
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" size-sm="4" size-lg="2">
+      <ion-card routerLink="/enlaces" color="primary">
+        <ion-card-content class="ion-text-center">
+          <ion-icon slot="start" name="arrow-redo" class="my-font-80"></ion-icon>
+          <br>
+          <ion-text color="light" class="my-font-20">
+            Enlaces
           </ion-text>
         </ion-card-content>
       </ion-card>
